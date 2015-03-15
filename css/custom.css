@@ -1,0 +1,35 @@
+.content{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 100px;
+  text-align: center;
+    width: auto;
+
+}
+.content .row{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.jumbotron{
+    background: url("../images/background.jpg") no-repeat center center;
+    background-position: 0% 80%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: black 0.2em 0.2em 0.2em;
+}
+
+#results{
+}
+
+.resultRow{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.resultRow h2,p{
+    display: inline;
+    color: #204d74;
+
+}
+

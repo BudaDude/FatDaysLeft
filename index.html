@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>404'd!</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--Font Awesome -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!-- Custom styles for this template -->
+    <link href="css/custom.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<div class="jumbotron">
+    <div class="bg">
+        <div class="container">
+            <h1>Fat Days Left</h1>
+
+
+        </div>
+    </div>
+</div>
+<div class="content">
+    <div class="container">
+        <div class="alert alert-danger alert-dismissible" id="alertMsg" hidden="true" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"/>
+        </div>
+
+        <div class='panel panel-info' hidden="true" id="results">
+            <div class="panel-heading">
+                <div class="panel-title">
+                    <h2>Results</h2>
+                </div>
+            </div>
+
+            <div class="container">
+                <label>So far you have lost:</label>
+
+                <div class="resultRow">
+                    <h2 id="weightLost" class="text-center"></h2>
+
+                    <p>lb</p>
+                </div>
+                <hr width="80%">
+                <label>That is about:</label>
+                <div class="resultRow">
+                    <h2 id="ratio">0.56</h2>
+
+                    <p>lb a day</p>
+                </div>
+
+                <hr width="80%">
+                <label>To reach your goal of</label>
+                <div class="resultRow">
+                    <h2 id="goal"></h2>
+
+                    <p>lb</p>
+                </div>
+
+                <hr width="80%">
+                <label>It should take</label>
+                <div class="resultRow">
+                    <h2 id="weeksNeeded"></h2>
+
+                    <p>weeks</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="form panel panel-default col-md-6 col-md-offset-3">
+            <div class="row">
+                <label>Start date: </label>
+                <select name="monthInput" id="monthInput">
+                    <option value="na">Month</option>
+                    <option value="1">January</option>
+                    <option value="2">February</option>
+                    <option value="3">March</option>
+                    <option value="4">April</option>
+                    <option value="5">May</option>
+                    <option value="6">June</option>
+                    <option value="7">July</option>
+                    <option value="8">August</option>
+                    <option value="9">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+                </select>
+                <select name="yearInput" id="yearInput">
+                    <option value="na">Year</option>
+                    <option value="2015">2015</option>
+                    <option value="2014">2014</option>
+                    <option value="2013">2013</option>
+                    <option value="2012">2012</option>
+                    <option value="2011">2011</option>
+                    <option value="2010">2010</option>
+                </select>
+                </select>
+            </div>
+            <div class="row">
+                <label>Start weight: </label>
+                <input name="Starting Weight" type="number" id="startWeightInput" min="1">
+            </div>
+            <div class="row">
+                <label>Current Weight: </label>
+                <input name="Current Weight" type="number" id="currentWeightInput" min="1">
+            </div>
+            <div class="row">
+                <label>Goal Weight: </label>
+                <input name="Goal Weight" type="number" id="goalWeightInput" min="1">
+            </div>
+            <div class="row">
+                <button disabled id="submitBtn" onclick="main()" type="button" class="btn btn-primary btn-lg">Submit
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+
+<footer>
+    <div class="navbar navbar-default navbar-fixed-bottom">
+        <div class="container">
+            <p>Made by <a href="http://twitter.com/budadude_">George Nance</a></p>
+        </div>
+
+    </div>
+
+</footer>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/WeightTrack.js" type="text/javascript"></script>
+</body>
+</html>
